@@ -2,11 +2,13 @@
 
 Material autoral do professor **Valdemar Lorenzon Júnior**.
 
+- share do código: https://onlinegdb.com/CsPcu15Uo5
+
 ## Visão geral
 
 Este repositório reúne um **template base para a disciplina de algoritmos com estudo de caso em C**, com foco em projetos pequenos, reutilização de código e redução de problemas recorrentes de entrada e saída em terminal. A proposta é deslocar a atenção do estudante para a **lógica do problema, o fluxo do programa, a modularização e a criação de funções**, sem deixar que detalhes operacionais de `scanf`, `getchar`, `fgets`, limpeza de buffer e especificadores de formato prejudiquem a aprendizagem logo no início.
 
-O projeto já organiza a aplicação em módulos de apoio geral e de entrada/saída, além de trazer um `main` enxuto como ponto de partida para exercícios, estudos de caso e experimentações em aula. A aplicação principal limpa a tela, exibe um cabeçalho, lê um nome com `scanString`, imprime mensagens no terminal e finaliza com pausa e mensagem de encerramento. fileciteturn2file0 fileciteturn2file2turn2file4
+O projeto já organiza a aplicação em módulos de apoio geral e de entrada/saída, além de trazer um `main` enxuto como ponto de partida para exercícios, estudos de caso e experimentações em aula. A aplicação principal limpa a tela, exibe um cabeçalho, lê um nome com `scanString`, imprime mensagens no terminal e finaliza com pausa e mensagem de encerramento.
 
 ## Objetivo didático
 
@@ -23,7 +25,7 @@ A ideia deste template é oferecer uma base para que o aluno possa:
 - praticar **modularização**, **abstração de funções utilitárias** e **organização de pequenos projetos**
 - compreender, a partir de código concreto, como a camada mais básica da linguagem lida com **input** e **output** em terminal
 
-Em vez de repetir, a cada exercício, toda a mecânica de leitura e tratamento de entrada, o estudante pode usar um conjunto mínimo de funções auxiliares e concentrar energia no raciocínio algorítmico e na construção da solução. O módulo `ioutils` expõe funções para inteiro, `float`, `double`, `char`, `string` e quebra de linha, enquanto `apputils` concentra utilidades gerais da aplicação, como limpeza de buffer, limpeza de tela, pausa, cabeçalho e mensagem final. fileciteturn2file1turn2file3turn2file4
+Em vez de repetir, a cada exercício, toda a mecânica de leitura e tratamento de entrada, o estudante pode usar um conjunto mínimo de funções auxiliares e concentrar energia no raciocínio algorítmico e na construção da solução. O módulo `ioutils` expõe funções para inteiro, `float`, `double`, `char`, `string` e quebra de linha, enquanto `apputils` concentra utilidades gerais da aplicação, como limpeza de buffer, limpeza de tela, pausa, cabeçalho e mensagem final.
 
 ## O que este repositório procura resolver
 
@@ -36,21 +38,21 @@ Em aulas introdutórias de C, é comum que boa parte da dificuldade prática nã
 - como evitar que a entrada em terminal “quebre” o fluxo do programa
 - como organizar melhor funções que se repetem em vários exercícios
 
-Este template foi pensado justamente para **encapsular parte desses problemas** em funções simples, de modo que o estudante possa ler, usar, adaptar e evoluir a base com mais segurança. Ao mesmo tempo, o repositório também serve como **objeto de estudo**, porque mostra como construir esse tipo de abstração usando recursos fundamentais da própria linguagem C. A implementação atual traz leitura recursiva para `int`, laços para `float`, `double` e `char`, leitura de string com `fgets`, funções específicas de impressão e uma função de quebra de linha. fileciteturn2file4
+Este template foi pensado justamente para **encapsular parte desses problemas** em funções simples, de modo que o estudante possa ler, usar, adaptar e evoluir a base com mais segurança. Ao mesmo tempo, o repositório também serve como **objeto de estudo**, porque mostra como construir esse tipo de abstração usando recursos fundamentais da própria linguagem C. A implementação atual traz leitura recursiva para `int`, laços para `float`, `double` e `char`, leitura de string com `fgets`, funções específicas de impressão e uma função de quebra de linha.
 
 ## Estrutura do repositório
 
 ### `main.c`
 
-Arquivo principal com um exemplo simples de execução do template. Ele mostra um fluxo básico de programa em terminal: limpeza de tela, exibição de cabeçalho, leitura de nome, saída de mensagens e pausa final. Também reforça a organização do raciocínio com declarações no topo, inicialização de variáveis e uso das funções auxiliares. fileciteturn2file0
+Arquivo principal com um exemplo simples de execução do template. Ele mostra um fluxo básico de programa em terminal: limpeza de tela, exibição de cabeçalho, leitura de nome, saída de mensagens e pausa final. Também reforça a organização do raciocínio com declarações no topo, inicialização de variáveis e uso das funções auxiliares.
 
 ### `apputils.h` e `apputils.c`
 
-Módulo com funções utilitárias gerais da aplicação. O header expõe `limparBuffer`, `cabecalho`, `fim`, `pausar` e `limparTela`, enquanto a implementação mostra o propósito de cada uma dessas funções no contexto da interface textual. fileciteturn2file2turn2file3
+Módulo com funções utilitárias gerais da aplicação. O header expõe `limparBuffer`, `cabecalho`, `fim`, `pausar` e `limparTela`, enquanto a implementação mostra o propósito de cada uma dessas funções no contexto da interface textual. 
 
 ### `ioutils.h` e `ioutils.c`
 
-Módulo voltado para **entrada e saída em terminal**, com funções para leitura e apresentação de tipos básicos, além de utilitários de impressão. O header reúne `printLn`, `printInt`, `scanInt`, `scanFloat`, `printFloat`, `printDouble`, `printChar`, `scanChar`, `printString`, `printStringLn` e `scanString`, e o body implementa a lógica de validação, impressão e limpeza de buffer correspondente. Há também, no código, um bloco comentado com uma alternativa para leitura de string via ponteiro para `char`. fileciteturn2file1turn2file4
+Módulo voltado para **entrada e saída em terminal**, com funções para leitura e apresentação de tipos básicos, além de utilitários de impressão. O header reúne `printLn`, `printInt`, `scanInt`, `scanFloat`, `printFloat`, `printDouble`, `printChar`, `scanChar`, `printString`, `printStringLn` e `scanString`, e o body implementa a lógica de validação, impressão e limpeza de buffer correspondente. Há também, no código, um bloco comentado com uma alternativa para leitura de string via ponteiro para `char`. 
 
 ## Ideia central da abordagem
 
@@ -65,7 +67,7 @@ Isso ajuda a:
 - incentivar a reutilização de código
 - promover a discussão sobre **projeto de funções** e **qualidade de organização**
 
-Ao mesmo tempo, o código permanece próximo do nível mais baixo da linguagem, permitindo que o estudante entenda **como essas abstrações são construídas** e quais problemas reais elas procuram mitigar. A própria base mostra decisões didáticas importantes, como o uso de `fgets` para leitura de frase, `getchar` para leitura de caractere com confirmação por Enter, e a centralização da limpeza de buffer em uma função utilitária. fileciteturn2file2turn2file4
+Ao mesmo tempo, o código permanece próximo do nível mais baixo da linguagem, permitindo que o estudante entenda **como essas abstrações são construídas** e quais problemas reais elas procuram mitigar. A própria base mostra decisões didáticas importantes, como o uso de `fgets` para leitura de frase, `getchar` para leitura de caractere com confirmação por Enter, e a centralização da limpeza de buffer em uma função utilitária.
 
 ## Como compilar
 
@@ -96,19 +98,19 @@ Em sistemas Unix-like:
 Estas funções têm foco em comportamento geral da aplicação e apoio à interface em terminal.
 
 #### `limparBuffer(void)`
-**Propósito:** descartar caracteres restantes na entrada até `\n` ou `EOF`, evitando que leituras posteriores consumam lixo do buffer. fileciteturn2file2
+**Propósito:** descartar caracteres restantes na entrada até `\n` ou `EOF`, evitando que leituras posteriores consumam lixo do buffer.
 
 #### `cabecalho(char *titulo)`
-**Propósito:** exibir um título no terminal, servindo como abertura visual do programa. fileciteturn2file2
+**Propósito:** exibir um título no terminal, servindo como abertura visual do programa. 
 
 #### `fim(void)`
-**Propósito:** mostrar uma mensagem final de encerramento da execução. fileciteturn2file2
+**Propósito:** mostrar uma mensagem final de encerramento da execução. 
 
 #### `pausar(void)`
-**Propósito:** pausar o fluxo do programa até o usuário pressionar Enter. fileciteturn2file2
+**Propósito:** pausar o fluxo do programa até o usuário pressionar Enter. 
 
 #### `limparTela(void)`
-**Propósito:** limpar a tela do terminal com `cls` no Windows ou `clear` em sistemas Unix-like. fileciteturn2file2
+**Propósito:** limpar a tela do terminal com `cls` no Windows ou `clear` em sistemas Unix-like.
 
 ---
 
@@ -126,8 +128,6 @@ A seguir, a documentação das funções de entrada e saída do módulo `ioutils
 printLn();
 ```
 
-fileciteturn2file1turn2file4
-
 #### `printInt(const int valor)`
 **O que faz:** imprime um valor inteiro sem quebra automática de linha.  
 **Parâmetros:** `valor`, inteiro a ser exibido.  
@@ -138,8 +138,6 @@ printLn();
 int idade = 20;
 printInt(idade);
 ```
-
-fileciteturn2file1turn2file4
 
 #### `scanInt(const char *mensagem)`
 **O que faz:** exibe uma mensagem, tenta ler um inteiro e repete a leitura em caso de erro.  
@@ -152,7 +150,7 @@ int idade;
 idade = scanInt("Informe a idade");
 ```
 
-**Observação didática:** nesta implementação, a repetição em caso de erro é feita por recursão. fileciteturn2file1turn2file4
+**Observação didática:** nesta implementação, a repetição em caso de erro é feita por recursão.
 
 #### `scanFloat(const char *mensagem)`
 **O que faz:** exibe uma mensagem, lê um `float` e repete até a entrada ser válida.  
@@ -165,8 +163,6 @@ float altura;
 altura = scanFloat("Informe a altura");
 ```
 
-fileciteturn2file1turn2file4
-
 #### `printFloat(const float valor)`
 **O que faz:** imprime um valor `float` com duas casas decimais.  
 **Parâmetros:** `valor`, número a ser exibido.  
@@ -177,8 +173,6 @@ altura = scanFloat("Informe a altura");
 float nota = 8.5f;
 printFloat(nota);
 ```
-
-fileciteturn2file1turn2file4
 
 #### `scanfDouble(const char *mensagem)` / `scanDouble(const char *mensagem)`
 **O que faz:** exibe uma mensagem, lê um `double` e repete até a entrada ser válida.  
@@ -191,7 +185,7 @@ double salario;
 salario = scanDouble("Informe o salario");
 ```
 
-**Observação:** no estado atual do projeto, o header está com `scanfDouble`, enquanto a implementação está com `scanDouble`. Convém padronizar os nomes no código. fileciteturn2file1turn2file4
+**Observação:** no estado atual do projeto, o header está com `scanfDouble`, enquanto a implementação está com `scanDouble`. Convém padronizar os nomes no código.
 
 #### `printDouble(const double valor)`
 **O que faz:** imprime um valor `double` formatado.  
@@ -204,8 +198,6 @@ double media = 7.25;
 printDouble(media);
 ```
 
-fileciteturn2file1turn2file4
-
 #### `scanChar(const char *mensagem)`
 **O que faz:** exibe uma mensagem, lê um caractere via `getchar` e considera a confirmação por Enter.  
 **Parâmetros:** `mensagem`, texto exibido antes da leitura.  
@@ -217,7 +209,7 @@ char opcao;
 opcao = scanChar("Informe uma letra");
 ```
 
-**Observação didática:** esta função lê o primeiro caractere digitado na linha e depois limpa o restante do buffer. fileciteturn2file1turn2file4
+**Observação didática:** esta função lê o primeiro caractere digitado na linha e depois limpa o restante do buffer. 
 
 #### `printChar(const char valor)`
 **O que faz:** imprime um caractere no terminal.  
@@ -229,8 +221,6 @@ opcao = scanChar("Informe uma letra");
 char opcao = 'A';
 printChar(opcao);
 ```
-
-fileciteturn2file1turn2file4
 
 #### `scanString(const char *mensagem, char *texto, int tamanho)`
 **O que faz:** exibe uma mensagem e lê uma linha de texto com `fgets`, respeitando o tamanho máximo do arranjo.  
@@ -247,7 +237,7 @@ char nome[20];
 scanString("Informe seu nome", nome, 20);
 ```
 
-**Observação didática:** esta é a versão que melhor se encaixa em programas introdutórios com arranjos locais no `main`. fileciteturn2file0turn2file1turn2file4
+**Observação didática:** esta é a versão que melhor se encaixa em programas introdutórios com arranjos locais no `main`.
 
 #### `printString(const char *mensagem)`
 **O que faz:** imprime uma string sem quebra automática de linha.  
@@ -259,8 +249,6 @@ scanString("Informe seu nome", nome, 20);
 printString("Ola, mundo");
 ```
 
-fileciteturn2file1turn2file4
-
 #### `printStringLn(const char *mensagem)`
 **O que faz:** imprime uma string com quebra de linha ao final.  
 **Parâmetros:** `mensagem`, texto a ser exibido.  
@@ -270,8 +258,6 @@ printString("Ola, mundo");
 ```c
 printStringLn("Fim do programa");
 ```
-
-fileciteturn2file1turn2file4
 
 ## Conteúdos que podem ser explorados com este template
 
@@ -300,7 +286,7 @@ Uma proposta de uso em aula pode seguir esta ideia:
 5. evoluir a base com novas funções, validações ou módulos
 6. discutir os erros encontrados durante o processo de leitura e entrada de dados
 
-Assim, o repositório não funciona apenas como “código pronto”, mas como **base reutilizável e também como material de estudo sobre decisões de implementação em C**. O `main` atual ilustra essa proposta usando `limparTela`, `cabecalho`, `scanString`, `printLn`, `printString`, `pausar` e `fim` em um fluxo curto e fácil de adaptar. fileciteturn2file0turn2file2turn2file4
+Assim, o repositório não funciona apenas como “código pronto”, mas como **base reutilizável e também como material de estudo sobre decisões de implementação em C**. O `main` atual ilustra essa proposta usando `limparTela`, `cabecalho`, `scanString`, `printLn`, `printString`, `pausar` e `fim` em um fluxo curto e fácil de adaptar.
 
 ## Sugestões de uso pedagógico
 
