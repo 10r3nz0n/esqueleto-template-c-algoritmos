@@ -4,18 +4,14 @@
 #include <stdlib.h>
 
 void cabecalho (char *titulo){
-     printf ("\n%s\n", titulo);
+     printLn (titulo);
 };
 
 void fim(){
-     printf ("\n%s\n", "Fim de execucao do programa!");
+     printLn ("Fim de execucao do programa!");
 };
 
-void limparBuffer(void) {
-    int c;
 
-    while ((c = getchar()) != '\n' && c != EOF) {}
-}
 
 void limparTela(void) {
     int resultado;
@@ -31,6 +27,7 @@ void limparTela(void) {
 }
 
 void pausar(void) {
-    printf("\nPressione <ENTER> para continuar...");
+    printLn();
+    printString ("Pressione <ENTER> para continuar...");
     getchar();
 }

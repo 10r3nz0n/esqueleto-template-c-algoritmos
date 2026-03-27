@@ -4,6 +4,11 @@
 
 #define TRUE 1
 
+void limparBuffer(void) {
+    int c;
+
+    while ((c = getchar()) != '\n' && c != EOF) {}
+}
 
 void printLn(void){
     printf ("\n");

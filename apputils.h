@@ -4,7 +4,6 @@
 #include "ioutils.h"
 
 //header
-void limparBuffer(void);
 void cabecalho (char *);
 void fim();
 void pausar (void);

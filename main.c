@@ -33,7 +33,6 @@ int main(void) {
 	//Saidas de resultados no terminal
 	printString ("Muito obrigado por me executar ");
 	printString (nome);
-	printString (" , pressione ENTER para terminar");
 	pausar();
 	fim();
 	return SUCESSO;

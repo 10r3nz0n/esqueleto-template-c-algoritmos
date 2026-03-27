@@ -1,7 +1,7 @@
 #ifndef IOUTILS_H
 #define IOUTILS_H
 
-#include "apputils.h"
+void limparBuffer(void);
 
 void printLn();
 
