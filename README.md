@@ -48,11 +48,11 @@ Arquivo principal com um exemplo simples de execução do template. Ele mostra u
 
 ### `apputils.h` e `apputils.c`
 
-Módulo com funções utilitárias gerais da aplicação. O header expõe `limparBuffer`, `cabecalho`, `fim`, `pausar` e `limparTela`, enquanto a implementação mostra o propósito de cada uma dessas funções no contexto da interface textual. 
+Módulo com funções utilitárias gerais da aplicação. O header expõe `cabecalho`, `fim`, `pausar` e `limparTela`, enquanto a implementação mostra o propósito de cada uma dessas funções no contexto da interface textual. 
 
 ### `ioutils.h` e `ioutils.c`
 
-Módulo voltado para **entrada e saída em terminal**, com funções para leitura e apresentação de tipos básicos, além de utilitários de impressão. O header reúne `printLn`, `printInt`, `scanInt`, `scanFloat`, `printFloat`, `printDouble`, `printChar`, `scanChar`, `printString`, `printStringLn` e `scanString`, e o body implementa a lógica de validação, impressão e limpeza de buffer correspondente. Há também, no código, um bloco comentado com uma alternativa para leitura de string via ponteiro para `char`. 
+Módulo voltado para **entrada e saída em terminal**, com funções para leitura e apresentação de tipos básicos, além de utilitários de impressão. O header reúne `limparBuffer`, `printLn`, `printInt`, `scanInt`, `scanFloat`, `printFloat`, `printDouble`, `printChar`, `scanChar`, `printString`, `printStringLn` e `scanString`, e o body implementa a lógica de validação, impressão e limpeza de buffer correspondente. Há também, no código, um bloco comentado com uma alternativa para leitura de string via ponteiro para `char`. 
 
 ## Ideia central da abordagem
 
