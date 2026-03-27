@@ -7,9 +7,8 @@
 #include <math.h>
 #include "apputils.h"
 #include "ioutils.h"
+#include "lib.h"
 
-#define SUCESSO 0
-#define FALHA 1
 
 //Macros #define ISSO aquilo
 

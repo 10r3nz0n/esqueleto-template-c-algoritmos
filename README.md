@@ -54,6 +54,9 @@ Módulo com funções utilitárias gerais da aplicação. O header expõe `cabec
 
 Módulo voltado para **entrada e saída em terminal**, com funções para leitura e apresentação de tipos básicos, além de utilitários de impressão. O header reúne `limparBuffer`, `printLn`, `printInt`, `scanInt`, `scanFloat`, `printFloat`, `printDouble`, `printChar`, `scanChar`, `printString`, `printStringLn` e `scanString`, e o body implementa a lógica de validação, impressão e limpeza de buffer correspondente. Há também, no código, um bloco comentado com uma alternativa para leitura de string via ponteiro para `char`. 
 
+### `lib.h`
+Header voltad a macros define para atender status por palavras, como verdadeiro e falso como `TRUE` e `FALSE` ao invés de 1 e 0, como os inteiros são lógicos em C. Inteiros, mas na verdade 1 e 0 como valores booleanos, mas mesmo assim, todo valor diferente de zero é verdadeiro. Também `SUCESSO` ou `FALHA` para casos como o return de main. Esta lib centraliza este tipo de necessidade para o projeto todo.
+
 ## Ideia central da abordagem
 
 O template propõe uma espécie de “camada didática” sobre a E/S da linguagem C. Em vez de fazer o aluno começar diretamente de chamadas isoladas da biblioteca padrão em todo exercício, a proposta é trabalhar com funções nomeadas de forma mais expressiva e com responsabilidades mais claras.
