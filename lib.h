@@ -4,6 +4,7 @@
 #define SUCESSO 0
 #define FALHA 1
 
+#define BOOLEAN int
 #define TRUE 0
 #define FALSE 1
 
