@@ -1,6 +1,6 @@
 # Esqueleto Template em C para Algoritmos
 
-Material autoral do professor **Valdemar Lorenzon Júnior**.
+Material autoral do professor **Valdemar Lorenzon Junior**.
 
 - share do código: https://onlinegdb.com/s1DBBBL5U
 
@@ -320,7 +320,7 @@ A intenção deste projeto não é “esconder” a linguagem C, mas **tornar o 
 
 ## Autor
 
-**Valdemar Lorenzon Júnior**
+**Valdemar Lorenzon Junior**
 
 ---
 
